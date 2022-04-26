@@ -1,6 +1,6 @@
 # antizapret-proxy-pac
 
-Modified Proxy Auto Configuration (PAC) file from antizapret.prostovpn.org with redirect to your own local or remote proxy.
+Modified Proxy Auto Configuration (PAC) files from antizapret.prostovpn.org with redirect to your own local or remote proxy.
 PAC files are constantly updated automatically.
 
 Permanent links:

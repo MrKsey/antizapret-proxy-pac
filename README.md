@@ -7,4 +7,4 @@ Permanent links:
 - for remote proxy (proxy-pac.home.arpa:1080): https://raw.githubusercontent.com/MrKsey/antizapret-proxy-pac/main/remote.pac
 
 *For remote proxy file work add in your system's or home router hosts file (/etc/hosts) an entry that specifies the hostname + IP address, where proxy server reside (for example 192.168.1.10):*  
-192.168.1.10  proxy-pac.home.arpa
+##### 192.168.1.10  proxy-pac.home.arpa

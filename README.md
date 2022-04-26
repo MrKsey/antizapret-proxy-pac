@@ -14,5 +14,5 @@ https://raw.githubusercontent.com/MrKsey/antizapret-proxy-pac/main/remote.pac
 short URL:  
 https://is.gd/50UVl6
 
-*For remote proxy file work add in your system's or home router hosts file (/etc/hosts) an entry that specifies the hostname + IP address, where proxy server reside (for example 192.168.1.10):*  
+*For remote proxy file work add in your system's or home router hosts file (/etc/hosts) an entry that specifies the hostname + IP address, where proxy server reside (for example 192.168.1.10):*
 ##### 192.168.1.10 &nbsp; proxy-pac.home.arpa

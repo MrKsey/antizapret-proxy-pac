@@ -11,5 +11,7 @@ export REMOTE_PROXY=proxy-pac.home.arpa:1080
 # add in your system's or home router hosts file (/etc/hosts) an entry that specifies the hostname + IP address, where proxy server reside:
 # 192.168.1.10     proxy-pac.home.arpa
 
+export REMOTE_PROXY2=proxy-pac.home.arpa:8118
+
 curl -A "$UA" -L "$PROXY_PAC_URL" | sed -E "s/return \".+DIRECT\"/return \"PROXY $LOCAL_PROXY; DIRECT\"/" > ./local.pac
-cat ./local.pac | sed -E "s/return \"PROXY $LOCAL_PROXY; DIRECT\"/return \"SOCKS $REMOTE_PROXY; DIRECT\"/" > ./remote.pac
+cat ./local.pac | sed -E "s/return \"PROXY $LOCAL_PROXY; DIRECT\"/return \"PROXY $REMOTE_PROXY2; DIRECT\"/" > ./remote.pac

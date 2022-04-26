@@ -4425,7 +4425,7 @@ function FindProxyForURL(url, host) {
           'instagram.com', 'cdninstagram.com',
           'fb.com', 'messenger.com'];
   if (fbtw.indexOf(shost) !== -1) {
-    return "PROXY $PROXY_IP_PORT; DIRECT";
+    return "PROXY 127.0.0.1:1080; DIRECT";
   }
 
   var curdomain = shost.match(/(.*)\.([^.]+$)/);
@@ -4463,7 +4463,7 @@ function FindProxyForURL(url, host) {
     // You should NOT use these proxy servers outside of PAC file!
     // DO NOT enter it manually in any program!
     // By doing this, you harm the service!
-    return "PROXY $PROXY_IP_PORT; DIRECT";
+    return "PROXY 127.0.0.1:1080; DIRECT";
   }
 
   return "DIRECT";

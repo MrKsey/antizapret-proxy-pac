@@ -12,4 +12,4 @@ export REMOTE_PROXY=proxy-pac.home.arpa:1080
 # 192.168.1.10     proxy-pac.home.arpa
 
 curl -A "$UA" -L "$PROXY_PAC_URL" | sed -E "s/return \".+DIRECT\"/return \"PROXY $LOCAL_PROXY; DIRECT\"/" > ./local.pac
-cat ./local.pac | sed -E "s/return \"PROXY $LOCAL_PROXY; DIRECT\"/return \"PROXY $REMOTE_PROXY; DIRECT\"/" > ./remote.pac
+cat ./local.pac | sed -E "s/return \"PROXY $LOCAL_PROXY; DIRECT\"/return \"SOCKS5 $REMOTE_PROXY; DIRECT\"/" > ./remote.pac

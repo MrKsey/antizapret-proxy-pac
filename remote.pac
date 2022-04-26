@@ -4426,7 +4426,7 @@ function FindProxyForURL(url, host) {
           'instagram.com', 'cdninstagram.com',
           'fb.com', 'messenger.com'];
   if (fbtw.indexOf(shost) !== -1) {
-    return "SOCKS5 proxy-pac.home.arpa:1080; DIRECT";
+    return "SOCKS proxy-pac.home.arpa:1080; DIRECT";
   }
 
   var curdomain = shost.match(/(.*)\.([^.]+$)/);
@@ -4464,7 +4464,7 @@ function FindProxyForURL(url, host) {
     // You should NOT use these proxy servers outside of PAC file!
     // DO NOT enter it manually in any program!
     // By doing this, you harm the service!
-    return "SOCKS5 proxy-pac.home.arpa:1080; DIRECT";
+    return "SOCKS proxy-pac.home.arpa:1080; DIRECT";
   }
 
   return "DIRECT";

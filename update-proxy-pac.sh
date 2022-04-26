@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 export PROXY_PAC_URL="https://antizapret.prostovpn.org/proxy.pac"
 export PROXY_IP_PORT=127.0.0.1:1080
